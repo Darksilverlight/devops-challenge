@@ -33,8 +33,6 @@ git clone https://github.com/skywarditsolutions/devops-challenge.git
 
 Now, show us your skills with Python (or whatever language you are most comfortable with) to develop a webserver (using `HTTPServer` python library) which listens on port `8000`. When you make a request to the server, it will return the following information:
 
-![webserver-example.png](images/ch1-webserver-example.png "Example output Challenge-1")
-
 Once you have it finished, can you create a Dockerfile and build an image with your application?
 
 Helpers:
@@ -90,12 +88,6 @@ Optional:
 We’ve a infrastructure diagram, can you develop Terraform manifests? To check everything works properly, add `user_data` to install `httpd` (default config) and start service.
 
 Maybe read helpers section can you give you how-to start the challenge and organize files. Create `challenge-3` folder to store all files.
-
-![ch3-diagram-infrastructure.png](images/ch3-diagram-infrastructure.png "Diagram Challenge-3")
-
-When you finish, you can reach Load Balancer a get the following output:
-
-![ch3-output-load-balancer.png](images/ch3-output-load-balancer.png "Example output Challenge-3")
 
 Helpers:
 
