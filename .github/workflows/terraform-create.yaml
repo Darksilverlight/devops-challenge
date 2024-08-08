@@ -42,4 +42,4 @@ jobs:
         shell: bash
         run: |
           set -eux
-          terraform plan
+          terraform apply -auto-approve

@@ -11,7 +11,7 @@ This is the requirements for local development as well the list of changes made.
  - A running Kubernetes cluster
 
 ### Makefile
-There exist a makefile to quickly do common commands such as building, running helm, etc. Please read it for a comprehensive list of 
+There exist a makefile to quickly do common commands such as building, running helm, etc. Please read it for a comprehensive list of commands.
  
 ## Changes
 Following will be a list of changes i made to the project requirements and structure.
@@ -33,10 +33,9 @@ This is a list of flaws I either do not have the time or expertise to address.
  - Ordering of ecr repository creation
  - Hardcoding of backend in terraform
  - Hardcoding of ecr repository
- - Github actions needing aws token to apply terraform state
  - Terraform file organization i.e. all of the terraform is in one large file and this should be broken into either modules or a multiple files for ease of maintenance
  - Inconsistent tagging in resource creation
- - Utilizing ECS instead of EKS
+ - Utilizing EKS instead of ECS
  - Appropriate iam roles
  - Naming conventions
  - Additional variables in terraform i.e. repo name, build name, region name
