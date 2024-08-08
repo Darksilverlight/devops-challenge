@@ -1,0 +1,45 @@
+name: CD
+on:
+  workflow_dispatch:
+  workflow_run: 
+   workflows: [ECR Image Upload]
+   types:
+    - completed
+
+defaults:
+  run:
+    working-directory: terraform
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: arn:aws:iam::021891597647:role/terraform-execution
+          aws-region: us-east-1
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: TF init
+        shell: bash
+        run: |
+          set -eux
+          terraform init -upgrade
+
+      - name: TF apply
+        shell: bash
+        run: |
+          set -eux
+          terraform plan
