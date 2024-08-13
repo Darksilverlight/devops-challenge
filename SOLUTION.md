@@ -1,6 +1,6 @@
 # Skyward DevOps Challenge Solution
 
-This is the requirements for local development as well the list of changes made. My project is at [this url](http://tf-lb-20240803064408239400000001-310650711.us-east-1.elb.amazonaws.com/). The database is commented out for cost reasons but does create it.
+This is the requirements for local development as well the list of changes made. My project is at [this url](hhttp://tf-lb-2024081319080618520000000b-514737532.us-east-1.elb.amazonaws.com/). The database is commented out for cost reasons but does create it.
 ## Local Development Requirements
  - [Go 1.22 or later](https://go.dev/doc/install)
  - [Dive](https://github.com/wagoodman/dive)
